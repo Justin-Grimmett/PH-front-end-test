@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 
+// Home page
+
 class Home extends Component {
     render() {
         return (

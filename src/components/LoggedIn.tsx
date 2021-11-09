@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 
+// Page to show after Login
+
 class LoggedIn extends Component {
     render() {
         return (
