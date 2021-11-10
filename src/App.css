@@ -40,3 +40,11 @@
 .predictive-hire-blue {
   color : "#3A7BF6"
 }
+
+.form-margin {
+  margin : 50px;
+}
+
+.error-text {
+  color: red;
+}

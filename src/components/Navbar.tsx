@@ -9,7 +9,7 @@ class Navbar extends Component {
             <div>
                 <nav className="nav-wrapper">
                     <div className="container">
-                        <a href="" className="brand-logo"></a>
+                        <div className="left">Predictive Hire Front-End Test : Justin Grimmett</div>
                         <ul className="right">
                             {/* Home page */}
                             <li><NavLink to="/">Home</NavLink></li>

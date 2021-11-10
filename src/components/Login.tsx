@@ -1,4 +1,3 @@
-import React from 'react';
 import { Formik, Field, Form, FormikHelpers } from 'formik';
 import { useNavigate } from 'react-router-dom';
 import * as Yup from 'yup';
@@ -37,6 +36,7 @@ const Login = () => {
     return (
         <div>
             <h1>Login</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus in alias amet laborum blanditiis eaque accusantium eligendi iste nisi et minima quo sit assumenda harum, nobis tempore adipisci, quasi eveniet.</p>
             <Formik
                 // Set the initial variable values
                 initialValues={{
@@ -51,28 +51,25 @@ const Login = () => {
                     { setSubmitting }: FormikHelpers<Values>
                 ) => {
                     setTimeout(() => {
-                        // Output just for TESTING
-                        console.log(values);    // {userName: 'abc', password: '123'}
-                                    //alert(JSON.stringify(values, null, 2));
                         // Finish the submitting cycle
                         setSubmitting(false);
                         // Redirect to the "Logged In" page
-                        navigate("/loggedIn", {state : {values}});
+                        navigate("/loggedIn", { state : {values} });
                     }, 500);
                 }}
             >
                 {/* To handle validation */}
                 {({ errors, touched }) => (
                 // Form UI elements
-                    <Form>
+                    <Form className="form-margin">
                         {/* User name*/}
                         <label htmlFor="userName">User Name</label>
-                        <Field id="userName" name="userName" placeholder="User Name" data-length="10"/>
-                        {touched.userName && errors.userName && <div>{errors.userName}</div>}
+                        <Field id="userName" name="userName" placeholder="User Name"/>
+                        {touched.userName && errors.userName && <div className="error-text">{errors.userName}</div>}
                         {/* Password */}
                         <label htmlFor="password">Password</label>
-                        <Field id="password" type="password" name="password" placeholder="Password"/>
-                        {touched.password && errors.password && <div>{errors.password}</div>}
+                        <Field id="password" name="password" placeholder="Password" type="password"/>
+                        {touched.password && errors.password && <div className="error-text">{errors.password}</div>}
                         {/* Buttons */}
                         <div className="mb-2">
                             <br/><br/><br/>
