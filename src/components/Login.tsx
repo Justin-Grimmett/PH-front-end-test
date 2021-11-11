@@ -35,7 +35,7 @@ const Login = () => {
 
     return (
         <div>
-            <h1>Login</h1>
+            <h1>Login Page</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus in alias amet laborum blanditiis eaque accusantium eligendi iste nisi et minima quo sit assumenda harum, nobis tempore adipisci, quasi eveniet.</p>
             <Formik
                 // Set the initial variable values
@@ -74,11 +74,11 @@ const Login = () => {
                         <div className="mb-2">
                             <br/><br/><br/>
                             {/* Main Submit - runs onSubmit*/}
-                            <Button variant="primary" size="lg" type="submit">Submit</Button>
+                            <Button variant="primary" size="lg" type="submit" id="submit">Submit</Button>
                             {/* Clear the text fields */}
-                            <Button type="reset">Clear</Button>
+                            <Button type="reset" id="reset">Clear</Button>
                             {/* Cancel and redirect back to the Home screen */}
-                            <Button type="button" 
+                            <Button type="button" id="cancel"
                             onClick={() => navigate("/")}>
                                     Cancel / Back to Home
                             </Button>

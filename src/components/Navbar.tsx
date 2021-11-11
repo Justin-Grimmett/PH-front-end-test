@@ -12,9 +12,9 @@ class Navbar extends Component {
                         <div className="left">Predictive Hire Front-End Test : Justin Grimmett</div>
                         <ul className="right">
                             {/* Home page */}
-                            <li><NavLink to="/">Home</NavLink></li>
+                            <li><NavLink to="/" id="home">Home</NavLink></li>
                             {/* Login page */}
-                            <li><NavLink to="/login">Login</NavLink></li>
+                            <li><NavLink to="/login" id="login">Login</NavLink></li>
                         </ul>
                     </div>
                 </nav>
