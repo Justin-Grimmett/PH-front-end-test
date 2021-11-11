@@ -8,6 +8,9 @@ In the project directory, you can run:
 
 ### `npm start`
 
+### Note if there is an error running this you may need to also run `npm install` first
+To install the node_modules
+
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
