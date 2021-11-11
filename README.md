@@ -19,7 +19,9 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 Note if there is an error running this you may need to also run this first : 
 ### `npm install`
-To install the node_modules
+Eg "'react-scripts' is not recognized as an internal or external command, operable program or batch file."
+
+This will install the `node_modules` folder
 
 ____________
 
